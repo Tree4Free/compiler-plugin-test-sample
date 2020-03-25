@@ -20,6 +20,9 @@ class CustomCodegenExtension : ExpressionCodegenExtension {
 
         val fn = targetClass.findFirstFunction("generatedMethod") { true }
 
+//      This way of declaring the method seems to be deprecated, now one needs a SyntheticResolveExtension to first add the function to the class
+
+
 //        val fn = SimpleFunctionDescriptorImpl.create(
 //            targetClass,
 //            Annotations.EMPTY,
